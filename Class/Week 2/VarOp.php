@@ -16,7 +16,8 @@
 <body>
 <?php
 	//create variables of all primitive data types
-	
+	$ix=(int)(9/5);
+	echo "<p> $ix </p>";
 	
 ?>
 </body>
