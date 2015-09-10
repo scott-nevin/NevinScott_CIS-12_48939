@@ -15,7 +15,7 @@
 <body>
 <?php
 	//Declare variables
-	$score = 85; //Score variable **Change this to see different results**
+	$score = rand(40,100); //Score variable using random number generator
 	$grade =$score>=90?"A":		          //if statement to test score and assign grade
 			($score<90 && $score>=80?"B":
 			($score<80 && $score>=70?"C":
@@ -31,6 +31,7 @@
 	echo "<p> Your Score: ". $score. " </p>"; //print score
 	echo "<p> Your Grade: ". $grade. " </p>"; //print grade
 	echo "<p> $praise ". $advice. " </p>";     //print possible praise and advice
+	echo "<p> Refresh this page for a new score scenario </p>";
 ?>
 </body>
 </html>
