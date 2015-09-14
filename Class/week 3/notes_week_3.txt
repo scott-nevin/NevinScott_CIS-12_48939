@@ -1,0 +1,8 @@
+09/14/15
+
+-There was no need to bracket the tests in the previous grade assignment, 
+ I could have simply tested one case for each grade:
+ $score<60?"F":
+ $score<70?"D": etc...
+
+-
