@@ -13,6 +13,10 @@
 	</head>
 
 	<body>
-	 <form action="gradeCalc_if_else.php" method="
+	 <form action="gradeCalc_switch.php" method="get">
+		Please enter grade percentage. 
+		<input type="text" name="score"><br>
+		<input type="submit">
+		</form>
 	</body>
 </html>
