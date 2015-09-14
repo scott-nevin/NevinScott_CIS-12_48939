@@ -5,4 +5,11 @@
  $score<60?"F":
  $score<70?"D": etc...
 
--
+-However! when we move to the if statement method, my original way of testing would be  correct.
+
+-Homework assignment: Write program that calculates straight time and over time:
+	Straight time <= 20 hours
+	Double time   <= 40 hours
+	Triple time   <  40 hours
+-input hours and pay rate and get full paycheck
+-Utilize ternary, if/else, and switch statements 
