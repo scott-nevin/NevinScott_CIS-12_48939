@@ -5,4 +5,4 @@ An "X" marks an assignment that _HAS_ been turned in
 
 -Assignment 1
 -Assignment 2  X
--Lab 1         
+-Lab 1         X
