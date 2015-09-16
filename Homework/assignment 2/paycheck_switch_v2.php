@@ -22,19 +22,18 @@
 		$trplTime = $payRate * 3;
 		
 		//test hours with switch
-		$hoursMod = (int)($hours / 10);
-		switch($hoursMod){
-			case  1:  $pay += $hours * $payRate;break;
-			case  2: 
-			case  3:  $pay += (($hours - 20) * $trplTime) + ( 20 * $payRate);break;
-			case  4: 
-			case  5:
-			case  6:
-			case  7:
-			case  8:
-			case  9:
-			case 10:  $pay += (($hours - 40) * $trplTime) + ( 20 * $dblTime) + (20 * $payRate);break;
-			default : echo "Invalid entries, please retry";break;
+		//$hoursMod = (int)($hours / 10);
+		switch($hours<0){
+			case  true: echo "Invalid entries, please retry";break; 
+			case  false: 
+				switch($hours<=20){
+					case true: $pay += $hours * $payRate;break;
+					case false:
+						switch($hours<40&&$hours>20){
+							case true: $pay +=  (($hours - 20) * $dblTime) + ( 20 * $payRate);break;
+							case false: $pay += (($hours - 40) * $trplTime) + ( 20 * $dblTime) + (20 * $payRate);break;
+						}
+				}
 		}
 		
 		//output results
