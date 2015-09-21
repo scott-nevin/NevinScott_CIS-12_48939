@@ -1,3 +1,5 @@
 09/21/15
 
--Forgot to code a truth table
+-Forgot to code a truth table update: finished, just need to upload
+-Starting with loops
+-try and get program made in class to do multiple columns
