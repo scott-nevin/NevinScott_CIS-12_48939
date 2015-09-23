@@ -2,4 +2,8 @@
 
 -Forgot to code a truth table update: finished, just need to upload
 -Starting with loops
--try and get program made in class to do multiple columns
+-try and get program made in class to do multiple columns - NEEDS FINISHING
+
+9/23/15
+
+-do the same thing where we want multiple columns but use 2D arrays
