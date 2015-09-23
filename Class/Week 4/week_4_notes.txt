@@ -7,3 +7,8 @@
 9/23/15
 
 -do the same thing where we want multiple columns but use 2D arrays
+-change 2D array program to show monthly interest as opposed to years
+	-Make sure to divide interest rate by 12 
+	-Multiply number of years by 12
+	-Change incrementer to work with months
+-
