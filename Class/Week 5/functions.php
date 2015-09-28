@@ -58,7 +58,7 @@
 		 function display($fv){ //function to display table of values
 			 echo '<table width="200" border="1">';
 			 echo "<tr><th>Year</th><th>Savings</th></tr>";
-			 for($year=0;$year<=count($fv);$year++){
+			 for($year=0;$year<count($fv);$year++){
 				 echo "<tr>";
 				 echo "<td>".$year."</td>";
 				 echo "<td>".number_format($fv[$year],2)."</td>";
