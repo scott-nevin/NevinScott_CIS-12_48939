@@ -1,0 +1,8 @@
+10/5/15
+
+-cross reference tables
+-Enumeration tables
+-Entity tables
+-Each table must have a primary key (something unique)
+-First normal form (1NF)
+-
