@@ -5,4 +5,14 @@
 -Entity tables
 -Each table must have a primary key (something unique)
 -First normal form (1NF)
--
+
+
+10/7/15
+
+-Gradebook database example:
+-Entities - Instructors, Courses, Assignments, Students (each gets an entity table)
+-Cross references - Ties entity tables together
+-In the real world, cross reference tables are often put into the entity tables themselves, which hides them and 
+ makes them difficult to read. 
+-Enumerated types - Department,
+**Download Mysql workbench and Mysql connector J** 
