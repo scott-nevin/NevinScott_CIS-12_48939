@@ -1,25 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<title><?php echo $page_title; ?></title>	
-	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+<?php
+	$page_title= 'Welcome to Buy Stuff!';
+	include('includes/header.html');
+	?>
+    <link rel="stylesheet" href="includes/style.css" type="text/css" media="screen" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-</head>
-<body>
-	<div id="header">
-		<h1>BuyStuff.com</h1>
-		<h2>Here, you can buy stuff.</h2>
-	</div>
-	<div id="navigation">
-		<ul>
-			<li><a href="#">Home Page</a></li>
-			<li><a href="#">Log in</a></li>
-			<li><a href="#">Shop</a></li>
-			<li><a href="#">Cart</a></li>
-			<li><a href="#">Administrator</a></li>
-		</ul>
-	</div>
-	<div id="content"><!-- Start of the page-specific content. -->
+    <!-- Start of the page-specific content. -->
 		<h1>Content Header</h1>
 			
 			<p>This is where the page-specific content goes. This section, and the corresponding header, will change from one page to the next.</p>
