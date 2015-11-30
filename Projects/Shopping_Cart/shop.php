@@ -1,5 +1,5 @@
 <?php
-	$page_title= 'Welcome to Buy Stuff!';
+	$page_title= 'Get Shopping!';
 	include('includes/header.html');
 	?>
     <link rel="stylesheet" href="includes/style.css" type="text/css" media="screen" />
