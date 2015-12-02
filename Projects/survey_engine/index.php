@@ -1,5 +1,5 @@
 <?php
-	$page_title= 'Welcome to Buy Stuff!';
+	$page_title= 'Welcome to Survey Guys!';
 	include('includes/header.html');
 	?>
     <link rel="stylesheet" href="includes/style.css" type="text/css" media="screen" />
@@ -9,7 +9,7 @@
 			<p>   </p>
             <b>
 			<?php
-            	echo file_get_contents("hmeGreet.txt");
+            	
 			?>
             </b>
             <p>   </p>
@@ -18,5 +18,14 @@
 <?php
     include('includes/footer.html');
     ?>
+</body>
+</html><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
 </body>
 </html>
