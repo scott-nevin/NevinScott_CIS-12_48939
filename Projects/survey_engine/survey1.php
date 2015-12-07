@@ -1,6 +1,6 @@
 <?PHP
 
-	include 'sqlSurvey.php';
+	include 'sqlSurvey1.php';
 
 
 	$qID = '';
