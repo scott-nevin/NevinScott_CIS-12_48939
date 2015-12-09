@@ -1,15 +1,11 @@
 <?PHP
 
-	//===================================================
-	//	SET THE QUESTION NUMBER HERE
-	//===================================================	
+	//get question number from file
 	$num = file_get_contents("nothing/qOfDay.txt");
 	$qNum = 'q'.$num;
 
 
-	//===================================================
-	//	GET A QUESTION FROM THE tblquestions TABLE
-	//===================================================
+	//get question from database
 
 	$SQL = "SELECT * FROM tblquestions WHERE tblquestions.QID = '$qNum'";
 

@@ -1,5 +1,5 @@
 <?php
-	$page_title= 'Welcome to Survey Guys!';
+	$page_title= 'Results!';
 	include('includes/header.html');
 	?>
     <link rel="stylesheet" href="includes/style.css" type="text/css" media="screen" />

@@ -1,5 +1,5 @@
 <?php
-	$page_title= 'Welcome to Survey Guys!';
+	$page_title= 'Survey of the Week!';
 	include('includes/header.html');
 	?>
     <link rel="stylesheet" href="includes/style.css" type="text/css" media="screen" />
@@ -79,12 +79,12 @@
 <INPUT TYPE = "Hidden" Name = "h1"  VALUE = <?PHP print $qID; ?>>
 </FORM>
 
-</b>
+</body></b>
 
 <?php
     include('includes/footer.html');
     ?>
-</body>
+
 </html>
 
 

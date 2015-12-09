@@ -10,6 +10,7 @@
 			<p>   </p>
             <b>
 			<?php
+				echo file_get_contents('hmeGreet.txt');
             	
 			?>
             </b>
