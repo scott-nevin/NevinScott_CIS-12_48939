@@ -1,3 +1,12 @@
+<?php
+	$page_title= 'Welcome to Survey Guys!';
+	include('includes/header.html');
+	?>
+    <link rel="stylesheet" href="includes/style.css" type="text/css" media="screen" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <h1>Results!</h1>
+			<p>   </p>
+            <b>
 <?PHP
 $question = '';
 $answerA = '';
@@ -105,5 +114,9 @@ print $imgTagB . " " . $percentB . "% " . $qB . "<BR>";
 print $imgTagC . " " . $percentC . "% " . $qC . "<BR>";
 
 ?>
+</b>
+<?php
+    include('includes/footer.html');
+    ?>
 </body>
 </html>

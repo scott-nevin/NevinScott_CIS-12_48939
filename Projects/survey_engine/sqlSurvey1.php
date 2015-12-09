@@ -3,7 +3,8 @@
 	//===================================================
 	//	SET THE QUESTION NUMBER HERE
 	//===================================================	
-	$qNum = 'q3';
+	$num = file_get_contents("nothing/qOfWeek.txt");
+	$qNum = 'q'.$num;
 
 	//===================================================
 	//	GET A QUESTION FROM THE tblquestions TABLE

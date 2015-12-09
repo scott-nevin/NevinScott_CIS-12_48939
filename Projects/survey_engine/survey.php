@@ -1,3 +1,10 @@
+<?php
+	$page_title= 'Welcome to Survey Guys!';
+	include('includes/header.html');
+	?>
+     <link rel="stylesheet" href="includes/style.css" type="text/css" media="screen" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <b>
 <?PHP
 
 	include 'sqlSurvey.php';
@@ -39,13 +46,16 @@
 
 
 ?>
+
 <html>
 <head>
-<title>Radio Buttons</title>
+<title>Survey of the Day</title>
 </head>
 
 
 <body>
+<h1>Survey of the Day!</h1>
+			<p>   </p>
 
 <FORM NAME ="form1" METHOD ="GET" ACTION ="process.php">
 
@@ -68,6 +78,10 @@
 <INPUT TYPE = "Submit" Name = "Submit2"  VALUE = "View results">
 <INPUT TYPE = "Hidden" Name = "h1"  VALUE = <?PHP print $qID; ?>>
 </FORM>
+</b>
+<?php
+    include('includes/footer.html');
+    ?>
 </body>
 </html>
 

@@ -1,3 +1,11 @@
+<?php
+	$page_title= 'Welcome to Survey Guys!';
+	include('../includes/headerAdmin.html');
+	?>
+     <link rel="stylesheet" href="../includes/style.css" type="text/css" media="screen" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <h1>Set a new question</h1>
+			<p>   </p>
 <?PHP
 
 $errorMessage = "Error";
@@ -96,11 +104,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 <FORM NAME ="form1" METHOD ="POST" ACTION ="setQuestion.php">
 
-Enter a question: <INPUT TYPE = 'TEXT' Name ='question'  value="What is Question?" maxlength="40">
+Enter a question: <INPUT TYPE = 'TEXT' Name ='question'  value="What is the Question?" maxlength="40">
 <p>
-Answer A: <INPUT TYPE = 'TEXT' Name ='AnswerA'  value="a3" maxlength="20">
-Answer B: <INPUT TYPE = 'TEXT' Name ='AnswerB'  value="b3" maxlength="20">
-Answer C: <INPUT TYPE = 'TEXT' Name ='AnswerC'  value="c3" maxlength="20">
+Answer A: <INPUT TYPE = 'TEXT' Name ='AnswerA'  value="a" maxlength="20">
+Answer B: <INPUT TYPE = 'TEXT' Name ='AnswerB'  value="b" maxlength="20">
+Answer C: <INPUT TYPE = 'TEXT' Name ='AnswerC'  value="c" maxlength="20">
 
 <P align = center>
 <INPUT TYPE = "Submit" Name = "Submit1"  VALUE = "Set this Question">
@@ -109,10 +117,12 @@ Answer C: <INPUT TYPE = 'TEXT' Name ='AnswerC'  value="c3" maxlength="20">
 </FORM>
 
 <P>
-<?PHP print $errorMessage;?>
+<?PHP //print $errorMessage;?>
 
 
-
+<?php
+    include('../includes/footer.html');
+    ?>
 
 </body>
 </html>

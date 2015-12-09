@@ -1,8 +1,17 @@
+<?php
+	$page_title= 'Welcome to Survey Guys!';
+	include('includes/header.html');
+	?>
+    <link rel="stylesheet" href="includes/style.css" type="text/css" media="screen" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        
+        <b>
 <?PHP
 session_start();
 if ((isset($_SESSION['hasVoted']))) {
 	if ($_SESSION['hasVoted'] = '1') {
 		print "You've already voted";
+		
 	}
 }
 else {
@@ -34,7 +43,23 @@ else {
 	}
 }
 
+	//FOR TESTING PURPOSES, REMOVE THIS FOR ACTUAL USE
+	// remove all session variables
+	session_unset();
+
+	// destroy the session
+	session_destroy();
+
+
 ?>
+
+<FORM NAME ="form1" METHOD ="POST" ACTION ="index.php">
+<INPUT TYPE = "Submit" Name = "Submit1"  VALUE = "Return to Homepage">
+</FORM>
+<?php
+    include('includes/footer.html');
+    ?>
+    </b>
 
 <html>
 <head>

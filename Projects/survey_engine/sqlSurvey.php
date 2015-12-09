@@ -3,7 +3,9 @@
 	//===================================================
 	//	SET THE QUESTION NUMBER HERE
 	//===================================================	
-	$qNum = 'q2';
+	$num = file_get_contents("nothing/qOfDay.txt");
+	$qNum = 'q'.$num;
+
 
 	//===================================================
 	//	GET A QUESTION FROM THE tblquestions TABLE
