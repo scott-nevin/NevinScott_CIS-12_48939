@@ -10,7 +10,6 @@
       	<p>Welcome, Admin!</p>
         <p>Here is a list of functions you may perform:</p>
         <p>1. Add a question</p>
-        <p>2. Remove a question</p>
         <p>3. Change the active Question of the Day/Week</p>
         <p>4. Log out and return to user view</p>
 				

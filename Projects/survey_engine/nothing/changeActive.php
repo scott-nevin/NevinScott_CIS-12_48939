@@ -17,19 +17,23 @@
         
         <?php
 		//from w3 schools
-				$username = "root";
-				$password = "";
-				$database = "surveyTest";
-				$server = "127.0.0.1";
-		
+				//$user_name = "root";
+				//$password = "";
+				//$database = "surveyTest";
+				//$server = "127.0.0.1";
+				$user_name = "48939";
+				$password = "48939cis12";
+				$database = "Nevin_Scott";
+				$server = "209.129.8.2";	
+					
 				// Create connection
-				$conn = new mysqli($server, $username, $password, $database);
+				$conn = new mysqli($server, $user_name, $password, $database);
 				// Check connection
 				if ($conn->connect_error) {
 					die("Connection failed: " . $conn->connect_error);
 				}
 		
-				$sql = "SELECT QID, Question FROM tblquestions";
+				$sql = "SELECT QID, Question FROM sn2395790_entity_tblquestions";
 				$result = $conn->query($sql);
 		
 				if ($result->num_rows > 0) {

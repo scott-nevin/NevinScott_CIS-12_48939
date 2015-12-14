@@ -17,10 +17,14 @@
 	$answerB = 'unchecked';
 	$answerC = 'unchecked';
 
-	$user_name = "root";
-	$password = "";
-	$database = "surveyTest";
-	$server = "127.0.0.1";
+	    //$user_name = "root";
+		//$password = "";
+		//$database = "surveyTest";
+		//$server = "127.0.0.1";
+		$user_name = "48939";
+		$password = "48939cis12";
+		$database = "Nevin_Scott";
+		$server = "209.129.8.2";
 
 	$db_handle = mysql_connect($server, $user_name, $password);
 	$db_found = mysql_select_db($database, $db_handle);

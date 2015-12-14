@@ -5,6 +5,6 @@
 	$qNum = 'q'.$num;
 
 	//get question form database
-	$SQL = "SELECT * FROM tblquestions WHERE tblquestions.QID = '$qNum'";
+	$SQL = "SELECT * FROM sn2395790_entity_tblquestions WHERE sn2395790_entity_tblquestions.QID = '$qNum'";
 
 ?>

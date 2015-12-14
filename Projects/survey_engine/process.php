@@ -19,17 +19,21 @@ else {
 
 		$selected_radio = $_GET['q'];
 
-		$user_name = "root";
-		$password = "";
-		$database = "surveyTest";
-		$server = "127.0.0.1";
+		//$user_name = "root";
+		//$password = "";
+		//$database = "surveyTest";
+		//$server = "127.0.0.1";
+		$user_name = "48939";
+		$password = "48939cis12";
+		$database = "Nevin_Scott";
+		$server = "209.129.8.2";
 
 		$db_handle = mysql_connect($server, $user_name, $password);
 		$db_found = mysql_select_db($database, $db_handle);
 
 		if ($db_found) {
 			$_SESSION['hasVoted'] = '1';
-			$SQL = "UPDATE answers SET $selected_radio = $selected_radio + 1";
+			$SQL = "UPDATE sn2395790_entity_answers SET $selected_radio = $selected_radio + 1";
 			$result = mysql_query($SQL);
 			mysql_close($db_handle);
 			print "Thanks for voting!";

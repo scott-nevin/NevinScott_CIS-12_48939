@@ -31,10 +31,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 		//============================================
 		//	OPEN A CONNECTION THE DATABASE
 		//============================================
-	$user_name = "root";
-	$password = "";
-	$database = "surveyTest";
-	$server = "127.0.0.1";
+	    //$user_name = "root";
+		//$password = "";
+		//$database = "surveyTest";
+		//$server = "127.0.0.1";
+		$user_name = "48939";
+		$password = "48939cis12";
+		$database = "Nevin_Scott";
+		$server = "209.129.8.2";
 
 	$db_handle = mysql_connect($server, $user_name, $password);
 	$db_found = mysql_select_db($database, $db_handle);
@@ -45,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 		//	GET THE LAST QUESTION NUMBER
 		//============================================
 
-		$SQL = "Select * FROM tblquestions";
+		$SQL = "Select * FROM sn2395790_entity_tblquestions";
 
 		$result = mysql_query($SQL);
 		$numRows = mysql_num_rows($result);
@@ -65,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 		//	INSERT THE QUESTION INTO THE tblquestions TABLE
 		//=========================================================
 
-		$SQL = "INSERT INTO tblquestions (QID, Question, qA, qB, qC) VALUES ('$question_Number', '$question', '$answerA', '$answerB', '$answerC')";
+		$SQL = "INSERT INTO sn2395790_entity_tblquestions (QID, Question, qA, qB, qC) VALUES ('$question_Number', '$question', '$answerA', '$answerB', '$answerC')";
 
 		$result = mysql_query($SQL);
 
@@ -74,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 		//	SET A ROW IN THE answers TABLE, WITH THE SAME QID FIELD
 		//=============================================================
 
-		$SQL = "INSERT INTO answers (QID, A, B, C) VALUES ('$question_Number', 0, 0, 0)";
+		$SQL = "INSERT INTO sn2395790_entity_answers (QID, A, B, C) VALUES ('$question_Number', 0, 0, 0)";
 		$result = mysql_query($SQL);
 
 

@@ -36,17 +36,21 @@ if (isset($_GET['Submit2'])) {
 
 		$qNum = $_GET['h1'];
 
-		$user_name = "root";
-		$password = "";
-		$database = "surveyTest";
-		$server = "127.0.0.1";
+		//$user_name = "root";
+		//$password = "";
+		//$database = "surveyTest";
+		//$server = "127.0.0.1";
+		$user_name = "48939";
+		$password = "48939cis12";
+		$database = "Nevin_Scott";
+		$server = "209.129.8.2";
 
 		$db_handle = mysql_connect($server, $user_name, $password);
 		$db_found = mysql_select_db($database, $db_handle);
 
 		if ($db_found) {
 
-			$SQL = "SELECT * FROM tblquestions, answers WHERE tblquestions.QID = answers.QID AND answers.QID = '$qNum'";
+			$SQL = "SELECT * FROM sn2395790_entity_tblquestions, answers WHERE sn2395790_entity_tblquestions.QID = sn2395790_entity_answers.QID AND sn2395790_entity_answers.QID = '$qNum'";
 			$result = mysql_query($SQL);
 			$db_field = mysql_fetch_assoc($result);
 
