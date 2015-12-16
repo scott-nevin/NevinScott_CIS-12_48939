@@ -11,10 +11,8 @@
 $errorMessage = "Error";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-
-		//===================================================
-		//	GET THE QUESTION AND ANSWERS FROM THE FORM
-		//===================================================
+	
+	//get questions and answers
 	$question = $_POST['question'];
 	$answerA = $_POST['AnswerA'];
 	$answerB = $_POST['AnswerB'];
@@ -26,11 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	$answerB = htmlspecialchars($answerB);
 	$answerC = htmlspecialchars($answerC);
 
-
-
-		//============================================
-		//	OPEN A CONNECTION THE DATABASE
-		//============================================
 	    //$user_name = "root";
 		//$password = "";
 		//$database = "surveyTest";
@@ -44,11 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	$db_found = mysql_select_db($database, $db_handle);
 
 	if ($db_found) {
-
-		//============================================
-		//	GET THE LAST QUESTION NUMBER
-		//============================================
-
+	
 		$SQL = "Select * FROM sn2395790_entity_tblquestions";
 
 		$result = mysql_query($SQL);
@@ -65,18 +54,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 		$question_Number = 'q' . $next_Q_Number;
 
 
-		//=========================================================
-		//	INSERT THE QUESTION INTO THE tblquestions TABLE
-		//=========================================================
-
 		$SQL = "INSERT INTO sn2395790_entity_tblquestions (QID, Question, qA, qB, qC) VALUES ('$question_Number', '$question', '$answerA', '$answerB', '$answerC')";
 
 		$result = mysql_query($SQL);
-
-
-		//=============================================================
-		//	SET A ROW IN THE answers TABLE, WITH THE SAME QID FIELD
-		//=============================================================
 
 		$SQL = "INSERT INTO sn2395790_entity_answers (QID, A, B, C) VALUES ('$question_Number', 0, 0, 0)";
 		$result = mysql_query($SQL);
