@@ -1,4 +1,6 @@
-
+<title><?php echo $page_title; ?></title>	
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <?php
 	$page_title= 'Welcome to Survey Guys!';
 	include('includes/header.html');

@@ -1,10 +1,16 @@
 <?php
+$page_title= 'Adding Answer!';
+	include('includes/header.html');
  
+ //$host="209.129.8.2"; // Host name 
+//$username="48939"; // Mysql username 
+//$password="48939cis12"; // Mysql password 
+//$db_name="Nevin_Scott"; // Database name 
 $host="localhost"; // Host name 
 $username="root"; // Mysql username 
 $password=""; // Mysql password 
 $db_name="myforum"; // Database name 
-$tbl_name="fanswer"; // Table name 
+$tbl_name="sn2395790_entity_fanswer"; // Table name 
  
 // Connect to server and select databse.
 mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
@@ -42,7 +48,7 @@ echo "Successful<BR>";
 echo "<a href='view_topic.php?id=".$id."'>View your answer</a>";
  
 // If added new answer, add value +1 in reply column 
-$tbl_name2="fquestions";
+$tbl_name2="sn2395790_entity_fquestions";
 $sql3="UPDATE $tbl_name2 SET reply='$Max_id' WHERE id='$id'";
 $result3=mysql_query($sql3);
 }

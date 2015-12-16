@@ -50,7 +50,7 @@ if (isset($_GET['Submit2'])) {
 
 		if ($db_found) {
 
-			$SQL = "SELECT * FROM sn2395790_entity_tblquestions, answers WHERE sn2395790_entity_tblquestions.QID = sn2395790_entity_answers.QID AND sn2395790_entity_answers.QID = '$qNum'";
+			$SQL = "SELECT * FROM sn2395790_entity_tblquestions, sn2395790_entity_answers WHERE sn2395790_entity_tblquestions.QID = sn2395790_entity_answers.QID AND sn2395790_entity_answers.QID = '$qNum'";
 			$result = mysql_query($SQL);
 			$db_field = mysql_fetch_assoc($result);
 
